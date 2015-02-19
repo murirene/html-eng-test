@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %>!</p>
-  </body>
+<head>
+    <title>Rene Murillo Vevo</title>
+    <script data-main="js/app" src="js/lib/require.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script async src='//cdn.embedly.com/widgets/platform.js' charset='UTF-8'></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Filter:</span>
+        <input type="text" class="form-control" placeholder="Artist/Song" aria-describedby="basic-addon1">
+    </div>
+    <div class="videoList">
+        <% if (videos.length) { %>
+        <% videos.forEach(function(video) { %>
+        <div class="row  top-buffer col-border" id="<%= video.id %>">
+            <div class="col-md-3 video-thumb">
+                <img src="<%- video.thumbnailUrl %>" class="img-responsive" alt="Cinque Terre">
+            </div>
+            <div class="col-md-6 video-title">
+                <% if(video.artists.length) { %>
+                    <h2>
+                    <% video.artists.forEach( function(artist) { %>
+                        <% if(artist.role === "Main") { %>
+                            <span class="mainArtist text-left"><%= artist.name %></span>
+                        <% } %>
+                    <% }) %>
+                    </h2>
+                <% } %>
+                <% if(video.artists.length) { %>
+                    <% video.artists.forEach( function(artist) { %>
+                        <small>
+                        <% if(artist.role === "Featured") { %>
+                            <span class="featuredArtist text-left"><%= artist.name %> </span>
+                        <% } %>
+                        </small>
+                    <% }) %>
+                <% } %>
+                <span class="songTitle text-left">
+                    <h3>
+                    <%= video.title %>
+                    </h3>
+                </span>
+            </div>
+            <div class="col-md-1 actionIcon">
+                <span class="glyphicon glyphicon-arrow-down decrease-vote icon-align-right"
+                      aria-hidden="true"></span>
+            </div>
+            <div class="col-md-1 vote-count">
+                <%= video.votes.total %>
+            </div>
+            <div class="col-md-1 actionIcon">
+                <span class="glyphicon glyphicon-arrow-up increase-vote icon-align-left"
+                      aria-hidden="true"></span>
+            </div>
+        </div>
+        <% }) %>
+        <% } %>
+    </div>
+</div>
+</body>
 </html>

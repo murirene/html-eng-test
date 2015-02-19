@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+.actionIcon:hover {
+    cursor: pointer;
+}
+
+.only-increase {
+    color: #DCDCDC;
+}
+
+.top-buffer { margin-top:20px; }
+.row {
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.mainArtist {
+
+
+}
+
+.featuredArtist {
+
+
+}

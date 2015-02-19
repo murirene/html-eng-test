@@ -1,0 +1,157 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/rrmurillo/Projects/Personal/challenge/html-eng-test',
+5 verbose install   [ 'body-parser',
+5 verbose install     'cookie-parser',
+5 verbose install     'debug',
+5 verbose install     'ejs',
+5 verbose install     'express',
+5 verbose install     'morgan',
+5 verbose install     'serve-favicon',
+5 verbose install     'async',
+5 verbose install     'underscore',
+5 verbose install     'shortid',
+5 verbose install     'express-session',
+5 verbose install     'string',
+5 verbose install     'nodemon' ] ]
+6 info preinstall html-eng-test@0.0.0
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping express@~4.11.1 /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+9 verbose already installed skipping morgan@~1.5.1 /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+10 verbose already installed skipping serve-favicon@~2.2.0 /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+11 verbose already installed skipping async@* /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+12 verbose already installed skipping underscore@* /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+13 verbose already installed skipping shortid@* /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+14 verbose already installed skipping express-session@* /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+15 verbose cache add [ 'string@*', null ]
+16 verbose cache add name=undefined spec="string@*" args=["string@*",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'string@*',
+17 verbose parsed url   path: 'string@*',
+17 verbose parsed url   href: 'string@*' }
+18 verbose cache add [ 'nodemon@latest', null ]
+19 verbose cache add name=undefined spec="nodemon@latest" args=["nodemon@latest",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'nodemon@latest',
+20 verbose parsed url   path: 'nodemon@latest',
+20 verbose parsed url   href: 'nodemon@latest' }
+21 verbose cache add name="string" spec="*" args=["string","*"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '*',
+22 verbose parsed url   path: '*',
+22 verbose parsed url   href: '*' }
+23 verbose addNamed [ 'string', '*' ]
+24 verbose addNamed [ null, '*' ]
+25 verbose cache add name="nodemon" spec="latest" args=["nodemon","latest"]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: 'latest',
+26 verbose parsed url   path: 'latest',
+26 verbose parsed url   href: 'latest' }
+27 verbose addNamed [ 'nodemon', 'latest' ]
+28 verbose addNamed [ null, null ]
+29 silly lockFile 99949bd9-string string@*
+30 verbose lock string@* /Users/rrmurillo/.npm/99949bd9-string.lock
+31 silly lockFile 164666a5-nodemon-latest nodemon@latest
+32 verbose lock nodemon@latest /Users/rrmurillo/.npm/164666a5-nodemon-latest.lock
+33 silly addNameRange { name: 'string', range: '*', hasData: false }
+34 info addNameTag [ 'nodemon', 'latest' ]
+35 verbose request where is /string
+36 verbose request registry http://npm.paypal.com/
+37 verbose request id 706ae49800ee416d
+38 verbose url raw /string
+39 verbose url resolving [ 'http://npm.paypal.com/', './string' ]
+40 verbose url resolved http://npm.paypal.com/string
+41 verbose request where is http://npm.paypal.com/string
+42 info trying registry request attempt 1 at 18:18:17
+43 http GET http://npm.paypal.com/string
+44 verbose already installed skipping body-parser@~1.10.2 /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+45 verbose already installed skipping cookie-parser@~1.3.3 /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+46 verbose already installed skipping debug@~2.1.1 /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+47 verbose already installed skipping ejs@~2.2.3 /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+48 verbose request where is /nodemon
+49 verbose request registry http://npm.paypal.com/
+50 verbose url raw /nodemon
+51 verbose url resolving [ 'http://npm.paypal.com/', './nodemon' ]
+52 verbose url resolved http://npm.paypal.com/nodemon
+53 verbose request where is http://npm.paypal.com/nodemon
+54 info trying registry request attempt 1 at 18:18:17
+55 verbose etag "9FITXEAFABSJPZMN8BO2H26OL"
+56 http GET http://npm.paypal.com/nodemon
+57 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+58 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+59 info trying registry request attempt 2 at 18:18:27
+60 http GET http://npm.paypal.com/string
+61 info trying registry request attempt 2 at 18:18:27
+62 verbose etag "9FITXEAFABSJPZMN8BO2H26OL"
+63 http GET http://npm.paypal.com/nodemon
+64 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+65 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+66 info trying registry request attempt 3 at 18:19:27
+67 verbose etag "9FITXEAFABSJPZMN8BO2H26OL"
+68 http GET http://npm.paypal.com/nodemon
+69 info trying registry request attempt 3 at 18:19:27
+70 http GET http://npm.paypal.com/string
+71 silly registry.get cb [ 304, undefined ]
+72 verbose etag http://npm.paypal.com/nodemon from cache
+73 silly lockFile 99949bd9-string string@*
+74 silly lockFile 99949bd9-string string@*
+75 verbose addNamed [ 'nodemon', '1.3.7' ]
+76 verbose addNamed [ '1.3.7', '1.3.7' ]
+77 silly lockFile fec6bbf0-nodemon-1-3-7 nodemon@1.3.7
+78 verbose lock nodemon@1.3.7 /Users/rrmurillo/.npm/fec6bbf0-nodemon-1-3-7.lock
+79 silly lockFile fec6bbf0-nodemon-1-3-7 nodemon@1.3.7
+80 silly lockFile fec6bbf0-nodemon-1-3-7 nodemon@1.3.7
+81 silly lockFile 164666a5-nodemon-latest nodemon@latest
+82 silly lockFile 164666a5-nodemon-latest nodemon@latest
+83 info already installed nodemon@1.3.7
+84 error network getaddrinfo ENOTFOUND
+84 error network This is most likely not a problem with npm itself
+84 error network and is related to network connectivity.
+84 error network In most cases you are behind a proxy or have bad network settings.
+84 error network
+84 error network If you are behind a proxy, please make sure that the
+84 error network 'proxy' config is set properly.  See: 'npm help config'
+85 error System Darwin 14.1.0
+86 error command "node" "/usr/local/bin/npm" "install"
+87 error cwd /Users/rrmurillo/Projects/Personal/challenge/html-eng-test
+88 error node -v v0.10.32
+89 error npm -v 1.4.28
+90 error syscall getaddrinfo
+91 error code ENOTFOUND
+92 error errno ENOTFOUND
+93 verbose exit [ 1, true ]

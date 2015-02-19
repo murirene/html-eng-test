@@ -1,0 +1,45 @@
+<% if (videos.length) { %>
+<% videos.forEach(function(video) { %>
+<div class="row top-buffer col-border" id="<%= video.id%>">
+    <div class="col-md-3 video-thumb">
+        <img src="<%- video.thumbnailUrl %>" class="img-responsive" alt="Cinque Terre">
+    </div>
+    <div class="col-md-6 video-title">
+        <% if(video.artists.length) { %>
+        <h2>
+            <% video.artists.forEach( function(artist) { %>
+            <% if(artist.role === "Main") { %>
+            <span class="mainArtist text-left"><%= artist.name %></span>
+            <% } %>
+            <% }) %>
+        </h2>
+        <% } %>
+        <% if(video.artists.length) { %>
+        <% video.artists.forEach( function(artist) { %>
+        <small>
+            <% if(artist.role === "Featured") { %>
+            <span class="featuredArtist text-left"><%= artist.name %> </span>
+            <% } %>
+        </small>
+        <% }) %>
+        <% } %>
+        <span class="songTitle text-right">
+            <h3>
+                <%= video.title %>
+            </h3>
+        </span>
+    </div>
+    <div class="col-md-1 actionIcon">
+        <span class="glyphicon glyphicon-arrow-down decrease-vote icon-align-right"
+              aria-hidden="true"></span>
+    </div>
+    <div class="col-md-1 vote-count">
+        <%= video.votes.total %>
+    </div>
+    <div class="col-md-1 actionIcon">
+        <span class="glyphicon glyphicon-arrow-up increase-vote icon-align-left"
+              aria-hidden="true"></span>
+    </div>
+</div>
+<% }) %>
+<% }%>
